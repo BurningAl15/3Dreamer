@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/3Dreamer/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/3Dreamer/static/js/main.c52b03d7.chunk.js",
+    "main.js.map": "/3Dreamer/static/js/main.c52b03d7.chunk.js.map",
+    "runtime-main.js": "/3Dreamer/static/js/runtime-main.d23e4937.js",
+    "runtime-main.js.map": "/3Dreamer/static/js/runtime-main.d23e4937.js.map",
+    "static/js/2.ad26a0ad.chunk.js": "/3Dreamer/static/js/2.ad26a0ad.chunk.js",
+    "static/js/2.ad26a0ad.chunk.js.map": "/3Dreamer/static/js/2.ad26a0ad.chunk.js.map",
+    "static/js/3.bcd18dde.chunk.js": "/3Dreamer/static/js/3.bcd18dde.chunk.js",
+    "static/js/3.bcd18dde.chunk.js.map": "/3Dreamer/static/js/3.bcd18dde.chunk.js.map",
+    "index.html": "/3Dreamer/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/3Dreamer/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.ad26a0ad.chunk.js.LICENSE.txt": "/3Dreamer/static/js/2.ad26a0ad.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/3Dreamer/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d23e4937.js",
+    "static/js/2.ad26a0ad.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.c52b03d7.chunk.js"
+  ]
+}
