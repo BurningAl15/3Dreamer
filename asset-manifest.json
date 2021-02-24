@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/3Dreamer/static/css/main.d9a65ccf.chunk.css",
-    "main.js": "/3Dreamer/static/js/main.7445bf9f.chunk.js",
-    "main.js.map": "/3Dreamer/static/js/main.7445bf9f.chunk.js.map",
+    "main.css": "/3Dreamer/static/css/main.bcaa96b2.chunk.css",
+    "main.js": "/3Dreamer/static/js/main.bebd5969.chunk.js",
+    "main.js.map": "/3Dreamer/static/js/main.bebd5969.chunk.js.map",
     "runtime-main.js": "/3Dreamer/static/js/runtime-main.7d126a4a.js",
     "runtime-main.js.map": "/3Dreamer/static/js/runtime-main.7d126a4a.js.map",
     "static/css/2.150d169a.chunk.css": "/3Dreamer/static/css/2.150d169a.chunk.css",
-    "static/js/2.d122590a.chunk.js": "/3Dreamer/static/js/2.d122590a.chunk.js",
-    "static/js/2.d122590a.chunk.js.map": "/3Dreamer/static/js/2.d122590a.chunk.js.map",
+    "static/js/2.36a1b306.chunk.js": "/3Dreamer/static/js/2.36a1b306.chunk.js",
+    "static/js/2.36a1b306.chunk.js.map": "/3Dreamer/static/js/2.36a1b306.chunk.js.map",
     "static/js/3.cda45e3e.chunk.js": "/3Dreamer/static/js/3.cda45e3e.chunk.js",
     "static/js/3.cda45e3e.chunk.js.map": "/3Dreamer/static/js/3.cda45e3e.chunk.js.map",
     "index.html": "/3Dreamer/index.html",
     "static/css/2.150d169a.chunk.css.map": "/3Dreamer/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.d9a65ccf.chunk.css.map": "/3Dreamer/static/css/main.d9a65ccf.chunk.css.map",
-    "static/js/2.d122590a.chunk.js.LICENSE.txt": "/3Dreamer/static/js/2.d122590a.chunk.js.LICENSE.txt",
+    "static/css/main.bcaa96b2.chunk.css.map": "/3Dreamer/static/css/main.bcaa96b2.chunk.css.map",
+    "static/js/2.36a1b306.chunk.js.LICENSE.txt": "/3Dreamer/static/js/2.36a1b306.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/3Dreamer/static/media/1.bf15e659.jpg",
     "static/media/2.jpg": "/3Dreamer/static/media/2.e23b5e20.jpg",
     "static/media/3.jpg": "/3Dreamer/static/media/3.90b2fc5f.jpg",
     "static/media/3DreamerCover.04673f99.png": "/3Dreamer/static/media/3DreamerCover.04673f99.png",
-    "static/media/Logo3dreamer.png": "/3Dreamer/static/media/Logo3dreamer.b0616fe4.png",
+    "static/media/Logo3dreamer.png": "/3Dreamer/static/media/Logo3dreamer.6e00fed5.png",
     "static/media/service1.jpg": "/3Dreamer/static/media/service1.38b9ec0b.jpg",
     "static/media/service2.jpg": "/3Dreamer/static/media/service2.3c6f0d9e.jpg",
     "static/media/service3.jpg": "/3Dreamer/static/media/service3.0e11f1d9.jpg"
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.7d126a4a.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.d122590a.chunk.js",
-    "static/css/main.d9a65ccf.chunk.css",
-    "static/js/main.7445bf9f.chunk.js"
+    "static/js/2.36a1b306.chunk.js",
+    "static/css/main.bcaa96b2.chunk.css",
+    "static/js/main.bebd5969.chunk.js"
   ]
 }
