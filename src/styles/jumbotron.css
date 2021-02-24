@@ -1,0 +1,36 @@
+.carousel{
+    max-width: 75%;
+    margin:auto;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+}
+
+.carousel-inner{
+    border-radius:10px;
+}
+
+.carousel-item{
+    /* bottom:0;
+    left:0;
+    right:0;
+    top:0; */
+
+    min-height:600px;
+    max-height:600px;
+}
+
+.d-block{
+    display:block;
+    height:auto;
+    min-height:100%;
+    left:50%;
+    position:absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:auto;
+    min-width:100%;
+}
+
+/* .carousel-item{
+    min-height:500px;
+} */
