@@ -1,32 +1,34 @@
 {
   "files": {
     "main.css": "/3Dreamer/static/css/main.a8424f9f.chunk.css",
-    "main.js": "/3Dreamer/static/js/main.1d84046a.chunk.js",
-    "main.js.map": "/3Dreamer/static/js/main.1d84046a.chunk.js.map",
-    "runtime-main.js": "/3Dreamer/static/js/runtime-main.4b74ec25.js",
-    "runtime-main.js.map": "/3Dreamer/static/js/runtime-main.4b74ec25.js.map",
+    "main.js": "/3Dreamer/static/js/main.9de61203.chunk.js",
+    "main.js.map": "/3Dreamer/static/js/main.9de61203.chunk.js.map",
+    "runtime-main.js": "/3Dreamer/static/js/runtime-main.469f3fd7.js",
+    "runtime-main.js.map": "/3Dreamer/static/js/runtime-main.469f3fd7.js.map",
     "static/css/2.150d169a.chunk.css": "/3Dreamer/static/css/2.150d169a.chunk.css",
-    "static/js/2.4d23b8f0.chunk.js": "/3Dreamer/static/js/2.4d23b8f0.chunk.js",
-    "static/js/2.4d23b8f0.chunk.js.map": "/3Dreamer/static/js/2.4d23b8f0.chunk.js.map",
-    "static/js/3.c19b7b60.chunk.js": "/3Dreamer/static/js/3.c19b7b60.chunk.js",
-    "static/js/3.c19b7b60.chunk.js.map": "/3Dreamer/static/js/3.c19b7b60.chunk.js.map",
+    "static/js/2.d441b966.chunk.js": "/3Dreamer/static/js/2.d441b966.chunk.js",
+    "static/js/2.d441b966.chunk.js.map": "/3Dreamer/static/js/2.d441b966.chunk.js.map",
+    "static/js/3.7a295903.chunk.js": "/3Dreamer/static/js/3.7a295903.chunk.js",
+    "static/js/3.7a295903.chunk.js.map": "/3Dreamer/static/js/3.7a295903.chunk.js.map",
     "index.html": "/3Dreamer/index.html",
     "static/css/2.150d169a.chunk.css.map": "/3Dreamer/static/css/2.150d169a.chunk.css.map",
     "static/css/main.a8424f9f.chunk.css.map": "/3Dreamer/static/css/main.a8424f9f.chunk.css.map",
-    "static/js/2.4d23b8f0.chunk.js.LICENSE.txt": "/3Dreamer/static/js/2.4d23b8f0.chunk.js.LICENSE.txt",
+    "static/js/2.d441b966.chunk.js.LICENSE.txt": "/3Dreamer/static/js/2.d441b966.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/3Dreamer/static/media/1.bf15e659.jpg",
     "static/media/2.jpg": "/3Dreamer/static/media/2.e23b5e20.jpg",
     "static/media/3.jpg": "/3Dreamer/static/media/3.90b2fc5f.jpg",
+    "static/media/4.jpg": "/3Dreamer/static/media/4.9a80472b.jpg",
+    "static/media/5.jpg": "/3Dreamer/static/media/5.c4c4c1c7.jpg",
     "static/media/Aldhair Vera.png": "/3Dreamer/static/media/Aldhair Vera.cc15113d.png",
     "static/media/Logo3dreamer.png": "/3Dreamer/static/media/Logo3dreamer.6e00fed5.png",
     "static/media/Nancy Rojas.png": "/3Dreamer/static/media/Nancy Rojas.0de46ff3.png",
     "static/media/video.f33127ba.mp4": "/3Dreamer/static/media/video.f33127ba.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.4b74ec25.js",
+    "static/js/runtime-main.469f3fd7.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.4d23b8f0.chunk.js",
+    "static/js/2.d441b966.chunk.js",
     "static/css/main.a8424f9f.chunk.css",
-    "static/js/main.1d84046a.chunk.js"
+    "static/js/main.9de61203.chunk.js"
   ]
 }
