@@ -1,0 +1,52 @@
+.navbar {
+  max-width: 90%;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 1.25rem 1rem !important;
+
+  .navbar-brand {
+    .img {
+      @include mediaquery(map-get($queries, md)) {
+        max-width: 150px !important;
+        max-height: 150px;
+      }
+
+      @include mediaquery(map-get($queries, lg)) {
+        max-width: 180px !important;
+        max-height: 180px;
+      }
+
+      @include mediaquery(map-get($queries, xl)) {
+        max-width: 180px !important;
+        max-height: 180px;
+      }
+    }
+    transition: all ease-in-out 0.3s;
+
+    &:hover{
+      transform: scale(1.05,1.05) rotate(.25);
+    }
+
+  }
+
+  .navbar-collapse {
+    width: fit-content;
+
+    .navbar-nav {
+      .nav-link {
+        font-size: 1.25em;
+        color: map-get($colors, _navbar) !important;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+        padding: 0 0.75rem !important;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          color: map-get($colors, _peach) !important;
+          text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+          transform: scale(1.2, 1.2);
+        }
+      }
+    }
+  }
+}

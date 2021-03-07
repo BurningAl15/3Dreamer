@@ -1,0 +1,33 @@
+$colors: (
+  // _green: #6cc2beda,
+  // _blue: #5a809e,
+  // _purple: #7c79a2,
+  // _red: rgb(245, 124, 124),
+  // _peach: #ffc1a6,
+  // _yellow: #fee4c4,
+
+  _navbar_bg: #14293b,
+  _green: #329bf8,
+  _peach: #fa6925,
+  _yellow: #ffc13b,
+  _navbar:#f5f0e1
+  );
+
+$sizes: (
+  button-size: 60px,
+);
+
+$font-sizes: (
+  title:2.5em,
+  price:2em,
+  content_a:1.5em,
+  content_b:1.25em,
+  content_c:1.1em,
+);
+
+$queries: (
+  sm: 576px,
+  md: 768px,
+  lg: 1440px,
+  xl: 1600px,
+);

@@ -1,0 +1,497 @@
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+
+@keyframes leftArrow {
+  0% {
+    transform: translate(0, 0) scale(3, 3);
+    filter: drop-shadow(2.5px 1px 0.5px rgba($color: #000000, $alpha: 0.25));
+  }
+  50% {
+    transform: translate(10px, 0) scale(3.25, 3.25);
+    filter: drop-shadow(2px 1px 0.1px rgba($color: #000000, $alpha: 0.3));
+  }
+  100% {
+    transform: translate(0, 0) scale(3, 3);
+    filter: drop-shadow(2.5px 1px 0.5px rgba($color: #000000, $alpha: 0.25));
+  }
+}
+
+@keyframes rightArrow {
+  0% {
+    transform: translate(0, 0) scale(3, 3);
+    filter: drop-shadow(-2px 1px 0.5px rgba($color: #000000, $alpha: 0.25));
+  }
+  50% {
+    transform: translate(-10px, 0) scale(3.25, 3.25);
+    filter: drop-shadow(-1px 1px 0.1px rgba($color: #000000, $alpha: 0.3));
+  }
+  100% {
+    transform: translate(0, 0) scale(3, 3);
+    filter: drop-shadow(-2px 1px 0.5px rgba($color: #000000, $alpha: 0.25));
+  }
+}
+
+:root {
+  font-size: 16px;
+}
+
+.App {
+  // text-align: center;
+  min-height: 100vh;
+
+  .App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($colors, _navbar_bg);
+  }
+  .filter-me {
+    padding: 0;
+    position: relative;
+    // padding-bottom:40px;
+    transition: all ease 0.3s;
+    .filter {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background: rgba(0, 0, 0, 0.0);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      transition: all ease 0.3s;
+      h1 {
+        color: map-get($colors, _navbar);
+        transition: all ease 0.3s;
+        opacity: 0;
+      }
+    }
+    .videoTag {
+      width: 100%;
+      &.filter-video {
+        filter: saturate(1.5);
+      }
+    }
+    &:hover {
+      filter: grayscale(0.5);
+      .filter {
+        h1 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .contact-us {
+    background-color: map-get($colors, _peach);
+
+    .contact-us-container {
+      width: 100%;
+      margin: 0 auto;
+      .contact-us-content {
+        width: 100%;
+        max-width: 100%;
+        margin-top:25px;
+        color: map-get($colors, _navbar) !important;
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+
+        &:last-child{
+          margin-bottom: 40px;
+        }
+      }
+
+      @include mediaquery(map-get($queries, md)) {
+        max-width: calc(100% - 50px);
+        .contact-us-content {
+          text-align: center;
+        }
+      }
+
+      @include mediaquery(map-get($queries, lg)) {
+        max-width: 60%;
+        .contact-us-content {
+          text-align: left;
+        }
+      }
+
+      @include mediaquery(map-get($queries, xl)) {
+        max-width: 60%;
+        .contact-us-content {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .products {
+    background-color: map-get($colors, _peach);
+    .services-card-group {
+      margin: auto;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      @include mediaquery(map-get($queries, lg)) {
+        max-width: calc(100% - 450px);
+      }
+
+      @include mediaquery(map-get($queries, xl)) {
+        max-width: calc(100% - 400px);
+      }
+    }
+  }
+
+  .services {
+    background-color: map-get($colors, _green);
+    margin-top: -10px;
+
+    .services-container {
+      width: 100%;
+      .row-services {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+        color: map-get($colors, _navbar);
+
+        .row-image-services {
+          max-width: 400px;
+          max-height: 400px;
+          border-radius: 15px;
+          // box-shadow: -5px 5px 3px 1.25px rgba(245, 124, 124, 0.5);
+        }
+
+        .row-services-content {
+          max-width: 60%;
+          justify-content: center;
+          text-align: left;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+          .row-services-content-title {
+            width: 100%;
+          }
+        }
+      }
+      @include mediaquery(map-get($queries, md)) {
+        max-width: calc(100% - 50px);
+        .row-services {
+          .row-image-services {
+            max-width: 250px;
+            max-height: 250px;
+          }
+        }
+      }
+
+      @include mediaquery(map-get($queries, lg)) {
+        max-width: calc(100% - 300px);
+        .row-services {
+          .row-image-services {
+            max-width: 400px;
+            max-height: 400px;
+          }
+        }
+      }
+
+      @include mediaquery(map-get($queries, xl)) {
+        max-width: 60%;
+        .row-services {
+          .row-image-services {
+            max-width: 400px;
+            max-height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-us {
+    background-color: map-get($colors, _green);
+
+    .services-card-group {
+      /* margin:auto;*/
+      padding: 0;
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    .about-us-container {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 20px;
+      position: relative;
+
+      @include mediaquery(map-get($queries, md)) {
+        max-width: calc(100% - 50px);
+      }
+
+      @include mediaquery(map-get($queries, lg)) {
+        max-width: 80%;
+      }
+
+      @include mediaquery(map-get($queries, xl)) {
+        max-width: 60%;
+      }
+
+      .about-us-what-we-do {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        text-align: center;
+        color: map-get($colors, _navbar);
+        font-weight: 600;
+      }
+
+      .about-us-info-container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 60px;
+
+        h4 {
+          color: map-get($colors, _navbar);
+        }
+        p {
+          max-width: 350px;
+          width: 100%;
+          color: map-get($colors, _navbar);
+          font-weight: 600;
+        }
+      }
+
+      .about-us-founders {
+        position: absolute;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        @include mediaquery(map-get($queries, md)) {
+          top: 100%;
+        }
+
+        @include mediaquery(map-get($queries, lg)) {
+          top: 70%;
+        }
+
+        @include mediaquery(map-get($queries, xl)) {
+          top: 70%;
+        }
+
+        h4 {
+          margin: 0 30px;
+          color: map-get($colors, _navbar);
+        }
+
+        .left-arrow {
+          animation-name: leftArrow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          max-width: 100px;
+          width: 100%;
+
+          path {
+            fill: map-get($colors, _peach);
+          }
+        }
+
+        .right-arrow {
+          animation-name: rightArrow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          max-width: 100px;
+          width: 100%;
+
+          path {
+            fill: map-get($colors, _peach);
+          }
+        }
+      }
+    }
+
+    @include mediaquery(map-get($queries, md)) {
+      padding-bottom: 80px;
+    }
+
+    @include mediaquery(map-get($queries, lg)) {
+      padding-bottom: 30px;
+    }
+
+    @include mediaquery(map-get($queries, xl)) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .footer {
+    background: map-get($colors, _navbar_bg);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-container{
+      max-width:calc(100% - 100px);
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer-text{
+        color:map-get($colors,_navbar);
+        font-weight: bold;
+      }
+      .social-media-bar {
+        margin:0;
+        .social-link {
+          transition: all ease 0.3s;
+          .social-media-buttons {
+            svg {
+              path {
+                fill: map-get($colors, _navbar);
+              }
+            }
+          }
+          &:hover {
+            transform: scale(1.25, 1.25);
+            .social-media-buttons {
+              svg {
+                filter: drop-shadow(3px 2px 0.5px map-get($colors, _green));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.title_text {
+  text-align: center;
+  margin: 15px 0;
+  color: map-get($colors, _navbar) !important;
+  // text-decoration: underline;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  font-weight: bold;
+  font-size: map-get($font-sizes, title);
+
+  @include mediaquery(map-get($queries, md)) {
+    max-width: 100%;
+  }
+
+  @include mediaquery(map-get($queries, lg)) {
+    max-width: 60%;
+  }
+
+  @include mediaquery(map-get($queries, xl)) {
+    max-width: 60%;
+  }
+}
+
+.space_between_sections {
+  margin-bottom: 70px !important;
+}
+
+.decoration_line {
+  margin: 20px 0;
+  border-bottom: 5px solid map-get($colors, _navbar);
+  max-width: 100%;
+  width: 100%;
+}
+
+.green_line {
+  margin: 10px 0;
+  border-color: map-get($colors, _green) !important;
+}
+
+.section {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
+
+  .social-media-buttons {
+    // box-shadow: 2px 2px 2px 1.25px rgba(0, 0, 0, 0.2);
+    background: rgba($color: #000000, $alpha: 0.25);
+    border-radius: 50%;
+    max-width: map-get($sizes, button-size);
+    max-height: map-get($sizes, button-size);
+    min-width: map-get($sizes, button-size);
+    min-height: map-get($sizes, button-size);
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      path {
+        fill: map-get($colors, _navbar);
+      }
+    }
+
+    &:hover {
+      box-shadow: 5px 5px 5px 1.25px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      transform: scale(1.25, 1.25);
+    }
+  }
+}
+
+.social-media-bar {
+  max-width: fit-content;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .social-link {
+    margin: 0 25px;
+  }
+}
+
+.content_a {
+  font-size: map-get($font-sizes, content_a) !important;
+  &.title {
+    font-weight: bold;
+  }
+  &.600 {
+    font-weight: 600;
+  }
+}
+
+.content_b {
+  font-size: map-get($font-sizes, content_b) !important;
+  &.600 {
+    font-weight: 600;
+  }
+  &.500 {
+    font-weight: 500;
+  }
+}
+.content_c {
+  font-size: map-get($font-sizes, content_c) !important;
+  &.600 {
+    font-weight: 600;
+  }
+  &.500 {
+    font-weight: 500;
+  }
+}
+
+@import "./styles/card.scss";
+@import "./styles/navbar.scss";
+@import "./styles/jumbotron.scss";

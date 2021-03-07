@@ -1,0 +1,130 @@
+.card {
+  box-shadow: 7px 7px 5px 1.25px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background: map-get($colors, _navbar) !important;
+
+  @include mediaquery(map-get($queries, md)) {
+    max-width: 350px !important;
+    min-width: 350px !important;
+  }
+
+  @include mediaquery(map-get($queries, lg)) {
+    max-width: 400px !important;
+    min-width: 400px !important;
+  }
+
+  @include mediaquery(map-get($queries, xl)) {
+    max-width: 450px !important;
+    min-width: 450px !important;
+  }
+
+  &.team-card {
+    margin: 0 0 40px 0;
+    background: map-get($colors, _navbar);
+    max-width: 350px !important;
+    min-width: 350px !important;
+    transition: all ease 0.3s;
+    .card-body {
+      .card-title {
+        color: map-get($colors, _green);
+      }
+      .card-text {
+        color: map-get($colors, _green);
+        transition: all ease 0.3s;
+  
+        &.price {
+          color: map-get($colors, _green);
+        }
+        &.data {
+          &:hover {
+            color: map-get($colors, _green);
+          }
+        }
+      }
+      .card-info-container {
+        color: map-get($colors, _green);
+      }
+    }
+
+    &:hover {
+      transform:scale(1.1,1.1);
+      background: map-get($colors, _peach);
+      .card-body {
+        .card-title {
+          color: map-get($colors, _green);
+        }
+        .card-text {
+          color: map-get($colors, _green);
+          transition: all ease 0.3s;
+    
+          &.price {
+            color: map-get($colors, _green);
+          }
+          &.data {
+            &:hover {
+              color: map-get($colors, _peach);
+            }
+          }
+        }
+        .card-info-container {
+          color: map-get($colors, _green);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding-top: 0 !important;
+
+    .card-title {
+      text-align: left;
+      color: map-get($colors, _green);
+    }
+    .card-text {
+      text-align: left;
+      color: map-get($colors, _green);
+      font-weight: 600;
+      margin-bottom: 0.5rem !important;
+      font-size: 0.9em;
+      transition: all ease 0.3s;
+      svg {
+        margin-right: 15px;
+      }
+      &.sizes {
+        margin-bottom: 0.15rem !important;
+      }
+
+      &.height {
+        margin-left: 65px;
+      }
+
+      &.price {
+        color: map-get($colors, _green);
+        font-weight: bold;
+        font-size: map-get($font-sizes, price);
+        align-self: center;
+      }
+      &.data {
+        &:hover {
+          text-decoration: none;
+          // transform:scale(1.1,1.1);
+          color: map-get($colors, _yellow);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .card-info-container {
+      justify-content: space-between;
+      padding: 0 15px;
+      &.team-card {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+      }
+    }
+  }
+}
