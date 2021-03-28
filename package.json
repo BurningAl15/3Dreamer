@@ -2,7 +2,7 @@
   "name": "3dreamer-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://burningal15.github.io/3dreamer",
+  "homepage": "https://3-dreamer.com",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-regular": "^5.0.13",

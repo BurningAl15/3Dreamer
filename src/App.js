@@ -15,7 +15,7 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import sample from "./Images/video.mp4";
+import initialGif from "./Images/InitialGif.gif";
 
 function App() {
   return (
@@ -25,9 +25,14 @@ function App() {
       </header>
 
       <Container fluid className="filter-me">
-        <video className="videoTag filter-video" autoPlay loop muted>
+        {/* <video className="videoTag filter-video" autoPlay loop muted>
           <source src={sample} type="video/mp4" />
-        </video>
+        </video> */}
+        {/* <div className="videoTag filter-video">
+          <img className="initial_gif" src={initialGif} alt="Initial Gif"></img>
+        </div> */}
+        <img className="videoTag filter-video" src={initialGif} alt="Initial Gif"></img>
+
         <Container fluid className="filter">
           <h1>Bienvenido</h1>
         </Container>

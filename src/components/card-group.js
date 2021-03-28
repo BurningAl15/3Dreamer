@@ -48,6 +48,11 @@ const products = [
             image: "2",
             alt: "1",
           },
+          {
+            id: "3",
+            image: "3",
+            alt: "1",
+          },
         ],
       },
     },
@@ -72,6 +77,16 @@ const products = [
           {
             id: "2",
             image: "2",
+            alt: "1",
+          },
+          {
+            id: "3",
+            image: "3",
+            alt: "1",
+          },
+          {
+            id: "4",
+            image: "4",
             alt: "1",
           },
         ],
@@ -100,6 +115,11 @@ const products = [
             image: "2",
             alt: "1",
           },
+          {
+            id: "3",
+            image: "3",
+            alt: "1",
+          },
         ],
       },
     },
@@ -126,6 +146,16 @@ const products = [
             image: "2",
             alt: "1",
           },
+          {
+            id: "3",
+            image: "3",
+            alt: "1",
+          },
+          {
+            id: "4",
+            image: "4",
+            alt: "1",
+          },
         ],
       },
     },
@@ -150,6 +180,11 @@ const products = [
           {
             id: "2",
             image: "2",
+            alt: "1",
+          },
+          {
+            id: "3",
+            image: "3",
             alt: "1",
           },
         ],
@@ -188,6 +223,11 @@ const products = [
             image: "4",
             alt: "1",
           },
+          {
+            id: "5",
+            image: "4",
+            alt: "1",
+          },
         ],
       },
     },
@@ -222,6 +262,99 @@ const products = [
           {
             id: "4",
             image: "4",
+            alt: "1",
+          },
+          {
+            id: "5",
+            image: "5",
+            alt: "1",
+          },
+        ],
+      },
+    },
+  },
+  {
+    id: "9",
+    cardInfo: {
+      isProduct: true,
+      title: "Placa para Perro Personalizada",
+      description_material: "PLA",
+      description_size_width: "12 cm",
+      description_size_height: "4.1 cm",
+      price: "10",
+      jumbotron: {
+        product: "PlacaPerro",
+        images: [
+          {
+            id: "1",
+            image: "1",
+            alt: "1",
+          },
+          {
+            id: "2",
+            image: "2",
+            alt: "1",
+          },
+          {
+            id: "3",
+            image: "3",
+            alt: "1",
+          },
+          {
+            id: "4",
+            image: "4",
+            alt: "1",
+          },
+          {
+            id: "5",
+            image: "5",
+            alt: "1",
+          },
+        ],
+      },
+    },
+  },
+  {
+    id: "10",
+    cardInfo: {
+      isProduct: true,
+      title: "Placa para Perro Personalizada",
+      description_material: "PLA",
+      description_size_width: "12 cm",
+      description_size_height: "4.1 cm",
+      price: "10",
+      jumbotron: {
+        product: "PlacaPerro2",
+        images: [
+          {
+            id: "1",
+            image: "1",
+            alt: "1",
+          },
+        ],
+      },
+    },
+  },
+  {
+    id: "11",
+    cardInfo: {
+      isProduct: true,
+      title: "Base para Audífonos",
+      description_material: "PLA",
+      description_size_width: "12 cm",
+      description_size_height: "4.1 cm",
+      price: "10",
+      jumbotron: {
+        product: "StandAudifono",
+        images: [
+          {
+            id: "1",
+            image: "1",
+            alt: "1",
+          },
+          {
+            id: "2",
+            image: "2",
             alt: "1",
           },
         ],

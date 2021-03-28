@@ -16,7 +16,7 @@ function JumbotronComponent(props) {
             className="d-block w-100"
             // src={CarouselImageCover}
             src={
-              require(`../Images/products/${product}/${item.image}.jpg`).default
+              require(`../Images/products/${product}/${item.image}.png`).default
             }
             alt={item.alt}
           />
